@@ -6,6 +6,7 @@ import android.app.Application;
  * Created by Administrator on 2017/10/20.
  */
 
-public class MyselfApplication
-        extends Application {
+public class MyselfApplication extends Application {
+    public final static String TAG_ME = "GibsonCool";
+
 }

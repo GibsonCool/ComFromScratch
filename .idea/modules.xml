@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ComeFromScratch.iml" filepath="$PROJECT_DIR$/ComeFromScratch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComFromScratch.iml" filepath="$PROJECT_DIR$/ComFromScratch.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReflectionDemo/ReflectionDemo.iml" filepath="$PROJECT_DIR$/ReflectionDemo/ReflectionDemo.iml" />
     </modules>
   </component>
