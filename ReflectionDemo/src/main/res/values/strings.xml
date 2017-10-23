@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ComeFromScratch</string>
+    <string name="reflection_name">ReflectionDemo</string>
 </resources>

@@ -52,4 +52,81 @@
         android:gravity="bottom"
         android:text="Hello GibsonCool!"
         android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取Method"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getDeclaredMethods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get_Declared_Methods"
+            android:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/getMethods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get_ethods"
+            android:textColor="@android:color/background_dark" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show_method_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Hello method!"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取Field"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getDeclaredFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="getDeclaredField"
+            android:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/getFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get_Fields"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show_fields_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Hello Fields!"
+        android:textColor="@android:color/holo_red_dark" />
 </LinearLayout>
