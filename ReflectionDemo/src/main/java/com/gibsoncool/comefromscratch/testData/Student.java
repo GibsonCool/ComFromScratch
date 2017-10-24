@@ -9,7 +9,8 @@ import com.gibsoncool.comefromscratch.utils.ToastUtils;
  * Created by GibsonCool on 2017/10/21 0021.
  */
 
-public class Student extends Person implements Controls.Examination {
+public class Student extends Person implements Controls.Examination,Controls.Sports
+{
     int age=100;    // 年龄
     public int height = 89;
 
@@ -45,4 +46,10 @@ public class Student extends Person implements Controls.Examination {
                 '}';
     }
 
+    @Override
+    public void playBasketBall()
+    {
+        LogUtils.e(mName + " play basketball  " );
+        ToastUtils.showShortToast(MyselfApplication.getMyApplication(),mName + " play basketball  ");
+    }
 }

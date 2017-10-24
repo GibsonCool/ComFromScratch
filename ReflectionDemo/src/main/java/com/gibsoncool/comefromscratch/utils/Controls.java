@@ -10,4 +10,10 @@ public interface Controls {
     interface Breathe{ void doBreathe();}
     //考试接口
     interface Examination{ void takeAnExamination();}
+
+    //
+    interface Sports{void playBasketBall();}
+
+
+
 }

@@ -21,6 +21,11 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity
 {
+
+	Class<?> studentClass = null;
+	Object   instance     = null;
+
+
 	@BindView(R.id.Class)
 	Button       btClass;
 	@BindView(R.id.getClass)
@@ -45,10 +50,15 @@ public class MainActivity extends AppCompatActivity
 	TextView     showFieldsDetail;
 	@BindView(R.id.tv_age)
 	TextView     tvAge;
+	@BindView(R.id.getSuperClass)
+	Button       getSuperClass;
+	@BindView(R.id.getInterfaces)
+	Button       getInterfaces;
+	@BindView(R.id.tv_super_interface)
+	TextView     tvSuperInterface;
+	@BindView(R.id.show_super_interface_detail)
+	TextView     showSuperInterfaceDetail;
 
-
-	Class<?> studentClass = null;
-	Object   instance     = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -59,7 +69,7 @@ public class MainActivity extends AppCompatActivity
 
 	}
 
-	@OnClick({R.id.Class, R.id.getClass, R.id.forName, R.id.getDeclaredMethods, R.id.getMethods,R.id.getDeclaredFields,R.id.getFields})
+	@OnClick({R.id.Class, R.id.getClass, R.id.forName, R.id.getDeclaredMethods, R.id.getMethods, R.id.getDeclaredFields, R.id.getFields, R.id.getSuperClass, R.id.getInterfaces})
 	public void btnClick(Button btn)
 	{
 
@@ -103,6 +113,15 @@ public class MainActivity extends AppCompatActivity
 				case R.id.getFields:
 					getFields();
 					break;
+
+				//superclass  interface相关
+				case R.id.getSuperClass:
+					getSuperClass();
+					break;
+				case R.id.getInterfaces:
+					getInterfaces();
+					break;
+
 			}
 		}
 		catch (Exception e)
@@ -147,7 +166,7 @@ public class MainActivity extends AppCompatActivity
 	}
 
 	/**
-	 * 获取该 Class 对象中的所有**公有**函数 ( 包含从父类和接口类集成下来的函数 )
+	 * 获取该 Class 对象中的所有**公有(即public修饰的)**函数 ( 包含从父类和接口类集成下来的函数 )
 	 */
 	private void showMethods()
 	{
@@ -186,6 +205,9 @@ public class MainActivity extends AppCompatActivity
 		}
 	}
 
+	/**
+	 * 获取该 class 对象中的所有属性（只是当前类定义的属性， 不包含从父类继承的属性）
+	 */
 	private void getDeclaredFields()
 	{
 		if (studentClass == null)
@@ -197,6 +219,7 @@ public class MainActivity extends AppCompatActivity
 		Field[] declaredFields = studentClass.getDeclaredFields();
 		for (Field field : declaredFields)
 		{
+			field.setAccessible(true);
 			strFields += "\ndeclared field name : " + field.getName();
 		}
 		showFieldsDetail.setText(strFields);
@@ -214,6 +237,9 @@ public class MainActivity extends AppCompatActivity
 		}
 	}
 
+	/**
+	 * 获取该 Class 对象中的所有**公有(即public修饰的)**属性 ( 包含从父类和接口类集成下来的属性 )
+	 */
 	private void getFields()
 	{
 		if (studentClass == null)
@@ -229,4 +255,47 @@ public class MainActivity extends AppCompatActivity
 		}
 		showFieldsDetail.setText(strFields);
 	}
+
+	/**
+	 * 循环获取该 class 对象的父类信息
+	 */
+	private void getSuperClass()
+	{
+		if (studentClass == null)
+		{
+			ToastUtils.showLongToast(this, "请先选择一种方式生成Class对象");
+			return;
+		}
+		Class<?> superclass = studentClass.getSuperclass();
+		String strSuperclass = studentClass.getName();
+		while (superclass != null)
+		{
+			strSuperclass += "super class is :" + superclass.getName() + "\n" + superclass.getName();
+			superclass = superclass.getSuperclass();
+		}
+
+		showSuperInterfaceDetail.setText(strSuperclass);
+	}
+
+	/**
+	 * 获取该 class 实现的所有接口类
+	 */
+	private void getInterfaces()
+	{
+		if (studentClass == null)
+		{
+			ToastUtils.showLongToast(this, "请先选择一种方式生成Class对象");
+			return;
+		}
+		Class<?>[] interfaces = studentClass.getInterfaces();
+		String strInterface = studentClass.getName() + " interface has :";
+		for (Class<?> class1 : interfaces)
+		{
+			strInterface += class1.getName() + "    \n";
+		}
+		showSuperInterfaceDetail.setText(strInterface);
+	}
+
+
 }
+

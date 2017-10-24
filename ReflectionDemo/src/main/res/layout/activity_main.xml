@@ -1,132 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.gibsoncool.comefromscratch.MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:tools="http://schemas.android.com/tools"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="获取class的三种方式"
-        android:textColor="@android:color/background_dark" />
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+			android:paddingBottom="@dimen/activity_vertical_margin"
+			android:paddingLeft="@dimen/activity_horizontal_margin"
+			android:paddingRight="@dimen/activity_horizontal_margin"
+			android:paddingTop="@dimen/activity_vertical_margin"
+			tools:context="com.gibsoncool.comefromscratch.MainActivity">
 
-        <Button
-            android:id="@+id/Class"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=".class"
-            android:textColor="@android:color/background_dark" />
+	<LinearLayout
+		android:id="@+id/activity_main"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
 
-        <Button
-            android:id="@+id/getClass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="getClass"
-            android:textColor="@android:color/background_dark" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="获取class的三种方式："
+			android:textColor="@android:color/background_dark"/>
 
-        <Button
-            android:id="@+id/forName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="forName"
-            android:textColor="@android:color/background_dark" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
 
-    </LinearLayout>
+			<Button
+				android:id="@+id/Class"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=".class"
+				android:textColor="@android:color/background_dark"/>
 
-    <TextView
-        android:id="@+id/show_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:text="Hello GibsonCool!"
-        android:textColor="@android:color/holo_red_dark" />
+			<Button
+				android:id="@+id/getClass"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="getClass"
+				android:textColor="@android:color/background_dark"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="获取Method"
-        android:textColor="@android:color/background_dark" />
+			<Button
+				android:id="@+id/forName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="forName"
+				android:textColor="@android:color/background_dark"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+		</LinearLayout>
 
-        <Button
-            android:id="@+id/getDeclaredMethods"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="get_Declared_Methods"
-            android:textColor="@android:color/background_dark" />
+		<TextView
+			android:id="@+id/show_detail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:text="Hello GibsonCool!"
+			android:textColor="@android:color/holo_red_dark"/>
 
-        <Button
-            android:id="@+id/getMethods"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="get_ethods"
-            android:textColor="@android:color/background_dark" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="获取Method："
+			android:textColor="@android:color/background_dark"/>
 
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
 
-    </LinearLayout>
+			<Button
+				android:id="@+id/getDeclaredMethods"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="get_Declared_Methods"
+				android:textColor="@android:color/background_dark"/>
 
-    <TextView
-        android:id="@+id/show_method_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:text="Hello method!"
-        android:textColor="@android:color/holo_red_dark" />
+			<Button
+				android:id="@+id/getMethods"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="get_ethods"
+				android:textColor="@android:color/background_dark"/>
 
 
+		</LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="获取Field"
-        android:textColor="@android:color/background_dark" />
+		<TextView
+			android:id="@+id/show_method_detail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:text="Hello method!"
+			android:textColor="@android:color/holo_red_dark"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/getDeclaredFields"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="getDeclaredField"
-            android:textColor="@android:color/background_dark" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="获取Field："
+			android:textColor="@android:color/background_dark"/>
 
-        <Button
-            android:id="@+id/getFields"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="get_Fields"
-            android:textColor="@android:color/background_dark" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_age"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+			<Button
+				android:id="@+id/getDeclaredFields"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="getDeclaredField"
+				android:textColor="@android:color/background_dark"/>
 
-    <TextView
-        android:id="@+id/show_fields_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:text="Hello Fields!"
-        android:textColor="@android:color/holo_red_dark" />
-</LinearLayout>
+			<Button
+				android:id="@+id/getFields"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="get_Fields"
+				android:textColor="@android:color/background_dark"/>
+
+			<TextView
+				android:id="@+id/tv_age"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/show_fields_detail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:text="Hello Fields!"
+			android:textColor="@android:color/holo_red_dark"/>
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="获取父类与接口："
+			android:textColor="@android:color/background_dark"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/getSuperClass"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="get_SuperClass"
+				android:textColor="@android:color/background_dark"/>
+
+			<Button
+				android:id="@+id/getInterfaces"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="get_Interfaces"
+				android:textColor="@android:color/background_dark"/>
+
+			<TextView
+				android:id="@+id/tv_super_interface"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/show_super_interface_detail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:text="Hello superclass interfaces!"
+			android:textColor="@android:color/holo_red_dark"/>
+
+
+
+	</LinearLayout>
+</ScrollView>
