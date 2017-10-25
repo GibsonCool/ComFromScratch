@@ -1,1 +1,1 @@
-include ':ReflectionDemo', ':annotationdemo'
+include ':ReflectionDemo', ':AnnotationDemo'
