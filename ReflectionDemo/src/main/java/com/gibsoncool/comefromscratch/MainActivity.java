@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity
 	}
 
 	/**
+	 * @deprecated hhahaah
 	 * 获取该 Class 对象中的所有函数(只是当前类定义的函数， 不包含从父类继承的函数 )
 	 */
 	private void showDeclaredMethods()
