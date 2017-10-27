@@ -7,14 +7,17 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.gibsoncool.annotationdemo.customeAnnotation.FruitControl;
 import com.gibsoncool.annotationdemo.customeAnnotation.MethodInfo;
 import com.gibsoncool.annotationdemo.utils.ToastUtils;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 
 public class MainActivity extends AppCompatActivity
 {
@@ -48,6 +51,7 @@ public class MainActivity extends AppCompatActivity
 				testRuntimeAnnotation();
 				break;
 			case R.id.bt2:
+				bt2Click();
 				break;
 		}
 	}
@@ -64,7 +68,37 @@ public class MainActivity extends AppCompatActivity
 			if (annotation != null)
 				str += annotation.author() + "***" + annotation.methodName() + "***" + annotation.version() + "\n";
 
-			reflectionRuntimeDetail.setText(str);
+			BindView annotation1 = method.getAnnotation(BindView.class);
+			if (annotation1 != null)
+				str += "view Id :" + annotation1.value();
+
+			FruitControl.FruitProvider annotation2 = method.getAnnotation(FruitControl.FruitProvider.class);
+			if (annotation2 != null)
+				str += "name :" + annotation2.name() + "come from " + annotation2.address();
 		}
+		reflectionRuntimeDetail.setText(str);
 	}
+
+	@FruitControl.FruitProvider(id = 2, name = "bt2Click", address = "来自MainActivity的方法")
+	public void bt2Click()
+	{
+		ToastUtils.showShortToast(this, "bt2Click 被调用了~");
+		Field[] fields = FruitControl.Apple.class.getDeclaredFields();
+		String strFruitName = "Apple.class Annotation\n";
+		for (Field field : fields)
+		{
+			if (field.isAnnotationPresent(FruitControl.FruitName.class))
+			{
+				FruitControl.FruitName fruitName = field.getAnnotation(FruitControl.FruitName.class);
+				strFruitName = strFruitName + fruitName.value();
+			}
+			else if (field.isAnnotationPresent(FruitControl.FruitColor.class))
+			{
+				FruitControl.FruitColor fruitColor = field.getAnnotation(FruitControl.FruitColor.class);
+				strFruitName = strFruitName + fruitColor.fruitColor().toString();
+			}
+		}
+		tv2.setText(strFruitName);
+	}
+
 }
