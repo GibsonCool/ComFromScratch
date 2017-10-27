@@ -3,7 +3,7 @@
 # Android & java
  任务目标 | 学习连接 | 学习目的 | 成果
 -|-|-| -
-反射   |[公共技术点之 Java 反射 Reflection](http://p.codekk.com/blogs/detail/5596953ed6459ae7934997c5)|会后续研究EventBus、ButterKnife、GreenDao等框架做基础知识储备和巩固|暂无
+反射   |[公共技术点之 Java 反射 Reflection](http://p.codekk.com/blogs/detail/5596953ed6459ae7934997c5)|会后续研究EventBus、ButterKnife、GreenDao等框架做基础知识储备和巩固|[ReflectionDemo](https://github.com/GibsonCool/ComFromScratch/tree/master/ReflectionDemo)
 注解   | [公共技术点之 Java 注解 Annotation](http://p.codekk.com/blogs/detail/54cfab086c4761e5001b253b)<br>[深入理解Java：注解（Annotation）基本概念](http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html)<br>[深入理解Java：注解（Annotation）自定义注解入门](http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html)<br>[深入理解Java：注解（Annotation）--注解处理器](http://www.cnblogs.com/peida/archive/2013/04/26/3038503.html)|同上 |暂无
 动态代理|[java代理机制](http://www.cnblogs.com/machine/archive/2013/02/21/2921345.html)<br>[Java 动态代理机制分析及扩展，第 1 部分](https://www.ibm.com/developerworks/cn/java/j-lo-proxy1/index.html)<br>[Java 动态代理机制分析及扩展，第 2 部分](https://www.ibm.com/developerworks/cn/java/j-lo-proxy2/)<br>[公共技术点之 Java 动态代理](http://a.codekk.com/detail/Android/Caij/%E5%85%AC%E5%85%B1%E6%8A%80%E6%9C%AF%E7%82%B9%E4%B9%8B%20Java%20%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86)|同上|无
 APT    |[【Annotation】Processing-Tool详解](http://blog.csdn.net/hj7jay/article/details/52180023)<br>[Android 如何编写基于编译时注解的项目](http://blog.csdn.net/lmj623565791/article/details/51931859)| 同上|无
