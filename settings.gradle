@@ -1,3 +1,4 @@
-include ':01_ReflectionDemo'
+include ':01_ReflectionDemo', ':04_mybutterknife_processer', ':04_mybutterknife_simple'
+include ':04_mybutterknife_annotation'
 include ':02_AnnotationsDemo'
 include ':03_DynamicProxyDemo'
