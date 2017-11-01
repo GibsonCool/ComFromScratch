@@ -1,1 +1,3 @@
-include ':ReflectionDemo', ':AnnotationsDemo', ':MyButterknife-Annotation', ':MyButterknife', ':DynamicProxy'
+include ':01_ReflectionDemo'
+include ':02_AnnotationsDemo'
+include ':03_DynamicProxyDemo'
