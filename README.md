@@ -15,14 +15,18 @@ EventBus |.....| |
 ButterkNife|.....| |
 Dagger |.....| |
 GreenDao|.....| b|
+快速集成框架|[MVPArms](https://github.com/JessYanCoding/MVPArms/blob/master/MVPArms.md)|..
 
 
 
 # Python
 
 
+爬虫|[小白学爬虫系列教程](http://cuiqingcai.com/4352.html)|..
+
 
 # other
 任务目标|学习连接|成果
 -|-|-
 Markdown|[Markdown 语法手册 （完整整理版）](http://blog.leanote.com/post/freewalk/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C#index "Markdown 语法手册 （完整整理版）")|0%
+设计模式|[http://www.cnblogs.com/peida/category/138050.html](http://www.cnblogs.com/peida/category/138050.html)|..
