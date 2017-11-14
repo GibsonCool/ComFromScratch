@@ -15,6 +15,7 @@ EventBus |.....| |
 ButterkNife|.....| |
 Dagger |.....| |
 GreenDao|.....| b|
+快速集成框架|[MVPArms](https://github.com/JessYanCoding/MVPArms/blob/master/MVPArms.md)|..
 
 
 
