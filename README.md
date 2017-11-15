@@ -22,6 +22,7 @@ GreenDao|.....| b|
 # Python
 任务目标|学习连接| 学习目的 |成果
 -|-|-|-
+基础学习资料|[Python语言系列专题MOOC上线](http://www.icourses.cn/gjjpkc/sy/yw/20170120/t_10443.html)|熟料掌握python用于解决现实中问题|..
 爬虫|[小白学爬虫系列教程](http://cuiqingcai.com/4352.html)|爬取公司bugly上的数据生成使用数据|..
 
 
