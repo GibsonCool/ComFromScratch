@@ -31,3 +31,4 @@ GreenDao|.....| b|
 -|-|-
 Markdown|[Markdown 语法手册 （完整整理版）](http://blog.leanote.com/post/freewalk/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C#index "Markdown 语法手册 （完整整理版）")|0%
 设计模式|[http://www.cnblogs.com/peida/category/138050.html](http://www.cnblogs.com/peida/category/138050.html)|..
+博客搭建|[免费个人博客搭建详解](http://www.jianshu.com/p/380290deb8f0)|..
