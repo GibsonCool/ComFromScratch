@@ -9,7 +9,7 @@
 APT    |[【Annotation】Processing-Tool详解](http://blog.csdn.net/hj7jay/article/details/52180023)<br>[Android 如何编写基于编译时注解的项目](http://blog.csdn.net/lmj623565791/article/details/51931859)| 同上|[04_mybutterknife_simple](https://github.com/GibsonCool/ComFromScratch/tree/master/04_mybutterknife_simple)
 依赖注入   |[公共技术点之依赖注入](http://p.codekk.com/blogs/detail/54cfab086c4761e5001b253c)|会后续研究EventBus、ButterKnife、GreenDao等框架做基础知识储备和巩固|..
 mvp  |[Android MVP架构搭建](http://www.jcodecraeer.com/a/anzhuokaifa/2017/1020/8625.html)<br>[Android MVP升级路（二）时尚版](http://www.jcodecraeer.com/a/anzhuokaifa/2017/1024/8636.html)|打算重构以前的项目代码，适应项目需求的复杂变更|暂无
-Retrofit  |......|研究研究|
+Retrofit  |[Retrofit2.0通俗易懂的学习姿势，Retrofit2.0 + OkHttp3 + Gson + RxJava](http://blog.csdn.net/qq_26787115/article/details/53034267)<br>[这是一份很详细的 Retrofit 2.0 使用教程（含实例讲解）](http://www.jianshu.com/p/a3e162261ab6)<br>[Android：手把手带你深入剖析 Retrofit 2.0 源码](http://blog.csdn.net/carson_ho/article/details/73732115)|研究研究|
 Rxjava   | .....|研究|
 EventBus |.....| |
 ButterkNife|.....| |
