@@ -1,4 +1,4 @@
-include ':01_ReflectionDemo', ':04_mybutterknife_processer', ':04_mybutterknife_simple', ':04_mybutterknife_api'
+include ':01_ReflectionDemo', ':04_mybutterknife_processer', ':04_mybutterknife_simple', ':04_mybutterknife_api', ':05_MvpDemo', ':06_OkHttpDemo_2.x', ':07_retrofitdemo'
 include ':04_mybutterknife_annotation'
 include ':02_AnnotationsDemo'
 include ':03_DynamicProxyDemo'

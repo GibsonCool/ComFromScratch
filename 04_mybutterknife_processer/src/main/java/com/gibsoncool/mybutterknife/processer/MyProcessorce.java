@@ -36,9 +36,18 @@ import javax.lang.model.util.Elements;
 @AutoService(Processor.class)
 public class MyProcessorce extends AbstractProcessor
 {
-	private Filer    mFileUtils;    //跟文件相关的辅助类，生成JavaSourceCode.
-	private Elements mElementUtils;    //跟元素相关的辅助类，帮助我们去获取一些元素相关的信息。
-	private Messager mMessager;    //跟日志相关的辅助类。
+	/**
+	 * 跟文件相关的辅助类，生成JavaSourceCode.
+	 */
+	private Filer    mFileUtils;
+	/**
+	 * 跟元素相关的辅助类，帮助我们去获取一些元素相关的信息。
+	 */
+	private Elements mElementUtils;
+	/**
+	 * 跟日志相关的辅助类。
+	 */
+	private Messager mMessager;
 
 	@Override
 	public synchronized void init(ProcessingEnvironment processingEnvironment)
