@@ -21,13 +21,60 @@
 			android:id="@+id/bt_send"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="请求"/>
+			android:text="get无参"/>
 
 		<Button
 			android:id="@+id/bt_weather"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="深圳天气查询"/>
+			android:text="get有参"/>
+
+		<Button
+			android:id="@+id/bt_send_parms"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="get有参替换"/>
+
+		<Button
+			android:id="@+id/bt_weather_map"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="get有参Map"/>
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/bt_post_form"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="post(form)"/>
+
+		<Button
+			android:id="@+id/bt_post_object"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="post(object)"/>
+
+		<!--<Button-->
+		<!--android:id="@+id/bt_weather"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:text="天气查询"/>-->
+		<!--<Button-->
+		<!--android:id="@+id/bt_send_parms"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:text="参数拆分"/>-->
+		<!--<Button-->
+		<!--android:id="@+id/bt_weather_map"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:text="天气查询(map)"/>-->
 	</LinearLayout>
 
 	<TextView
